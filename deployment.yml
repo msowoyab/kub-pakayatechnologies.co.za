@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pakayatechnologies
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: pakayatechnologies
+  template:
+    metadata:
+      labels:
+        app: pakayatechnologies
+    spec:
+      containers:
+      - image: image: bmsowoya/pakayatechnologies.co.za
+        name: pakayatechnologies
+        ports:
+        - containerPort: 80
