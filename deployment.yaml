@@ -14,7 +14,7 @@ spec:
         app: pakayatechnologies
     spec:
       containers:
-      - image: image: bmsowoya/pakayatechnologies.co.za
-        name: pakayatechnologies
-        ports:
-        - containerPort: 80
+        - image: image: bmsowoya/pakayatechnologies.co.za
+          name: pakayatechnologies
+          ports:
+            - containerPort: 80
